@@ -1299,7 +1299,7 @@
                 advanced: {
                   updateOnContentResize: true
                 },
-                setHeight: 400,
+                setHeight: false,
                 scrollInertia: 0
 			}).addClass('scroll-bar-select');
 
