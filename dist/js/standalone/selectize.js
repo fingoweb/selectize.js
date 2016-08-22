@@ -1678,6 +1678,9 @@
 		 */
 		onBlur: function(e, dest) {
 			var self = this;
+
+			self.settings.updateLastValue(self.$control_input.val());
+
 			if (!self.isFocused) return;
 			self.isFocused = false;
 
