@@ -1862,9 +1862,7 @@
 		 * @param {object} e (optional)
 		 */
 		setActiveItem: function($item, e) {
-			console.log('set active item');
 			var self = this;
-			console.log(self.settings.mode);
 			var eventName;
 			var i, idx, begin, end, item, swap;
 			var $last;
