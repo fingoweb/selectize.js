@@ -1610,6 +1610,7 @@
 		onKeyUp: function(e) {
 			var self = this;
 
+			self.settings.onSearchChange(self.$control_input.val());
 			if (self.isLocked) return e && e.preventDefault();
 			var value = self.$control_input.val() || '';
 			if (self.lastValue !== value) {
@@ -1861,7 +1862,9 @@
 		 * @param {object} e (optional)
 		 */
 		setActiveItem: function($item, e) {
+			console.log('set active item');
 			var self = this;
+			console.log(self.settings.mode);
 			var eventName;
 			var i, idx, begin, end, item, swap;
 			var $last;
