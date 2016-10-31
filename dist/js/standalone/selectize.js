@@ -1186,7 +1186,7 @@
 			}
 
 			//modified by JR
-			if (!self.settings.placeholder) {
+			if (!self.settings.placeholder || self.settings.placeholder && self.settings.allowEmptyOption) {
 				$control_input.prop('readonly', true);
 			}
 
